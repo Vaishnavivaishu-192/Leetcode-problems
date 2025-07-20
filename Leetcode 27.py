@@ -1,0 +1,12 @@
+Leetcode - 13
+
+27 Remove Element
+
+class Solution(object):
+    def removeElement(self, nums, val):
+        count=0
+        for i in range(0,len(nums)):
+            if nums[i]!=val:
+                nums[count]=nums[i]
+                count+=1
+        return count
